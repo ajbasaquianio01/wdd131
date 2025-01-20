@@ -1,0 +1,128 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #4b7f52; /* Fern Green */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #d2f898; /* Mindaro */
+    font-weight: 900;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #90d7ff; /* Pale Azure */
+  }
+  
+  /* Main Section */
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #c19875; /* Lion */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #4b7f52;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #4b7f52; /* Fern Green */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  footer #currentyear {
+    font-weight: 900;
+  }
+  
+  footer #lastModified {
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  
+  /* Responsive Navigation with Flexbox */
+  @media (min-width: 768px) {
+    nav ul {
+      gap: 2rem;
+    }
+  }
+  
+  /* Main Layout with Grid */
+  @media (min-width: 768px) {
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .card {
+      text-align: left;
+    }
+  }
+  
