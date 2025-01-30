@@ -1,78 +1,88 @@
 body {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.6;
-    background-color: #d2f898; /* Mindaro */
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #4b7f52; /* Fern Green */
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    transition: color 0.3s ease;
-  }
-  
-  header nav a:hover {
-    color: #90d7ff; /* Pale Azure */
-  }
-  
-  main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  
-  gallery figure {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  gallery figcaption {
-    padding: 0.5rem;
-    background-color: #c19875; /* Lion */
-    color: white;
-    font-weight: bold;
-  }
-  
-  footer {
-    background-color: #4b7f52; /* Fern Green */
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-  }
-  
-  footer p {
-    margin: 0.5rem 0;
-  }
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4b7f52;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #90d7ff;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #d2f898;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c19875;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #4b7f52;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
