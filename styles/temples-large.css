@@ -1,0 +1,78 @@
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: #d2f898; /* Mindaro */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4b7f52; /* Fern Green */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #90d7ff; /* Pale Azure */
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  gallery figure {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  gallery figcaption {
+    padding: 0.5rem;
+    background-color: #c19875; /* Lion */
+    color: white;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #4b7f52; /* Fern Green */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }

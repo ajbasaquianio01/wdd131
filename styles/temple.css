@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #d2f898; /* Mindaro */
+    color: #4b7f52; /* Fern Green */
+}
+
+header {
+    background-color: #4b7f52; /* Fern Green */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #d2f898; /* Mindaro */
+    text-decoration: none;
+    font-weight: 900;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #90d7ff; /* Pale Azure */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+main h2 {
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    background-color: #ffffff;
+    border: 1px solid #c19875; /* Lion */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #4b7f52; /* Fern Green */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    figure {
+        padding: 1.5rem;
+    }
+}
