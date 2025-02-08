@@ -1,12 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+    updateFooterDates();
+    updateWindChill();
+});
+
+function updateFooterDates() {
     document.getElementById("currentYear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
+}
 
-    const temperature = 30; // Fahrenheit
-    const windSpeed = 10; // mph
-    
-    document.getElementById("windChill").textContent = calculateWindChill(temperature, windSpeed);
-});
+function updateWindChill() {
+    const temperature = 30; // Temperature in Fahrenheit
+    const windSpeed = 10;   // Wind speed in mph
+
+    const windChillElement = document.getElementById("windChill");
+    windChillElement.textContent = calculateWindChill(temperature, windSpeed);
+}
 
 function calculateWindChill(temp, wind) {
     if (temp <= 50 && wind > 3) {

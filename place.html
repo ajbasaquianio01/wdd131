@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philippines</title>
-    <!-- Link to CSS files -->
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
-    <!-- Link to JavaScript file -->
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -24,24 +22,25 @@
         <!-- Data section -->
         <section class="data">
             <h2>Data</h2>
-            <p>Area: 300,000 km2</p>
-            <p>Population: 116,416,531</p>
-            <p>Capital: Manila</p>
-            <p>Currency: Peso</p>
-            <p>Time Zone: UTC +8</p>
+            <p><strong>Area:</strong> 300,000 km²</p>
+            <p><strong>Population:</strong> 116,416,531</p>
+            <p><strong>Capital:</strong> Manila</p>
+            <p><strong>Currency:</strong> Peso (₱)</p>
+            <p><strong>Time Zone:</strong> UTC +8</p>
         </section>
         <!-- Weather section -->
         <section class="weather">
-            <h2>Weather</h2>
-            <p>Temperature: 30 °F</p>
-            <p>Wind Speed: 10 mph</p>
-            <p>Wind Chill: <span id="windChill">N/A</span></p>
+            <h2 class="highlight">Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon-mobile">
+            <p><strong>Temperature:</strong> 30 °F</p>
+            <p><strong>Wind Speed:</strong> 10 mph</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
         </section>
     </main>
     <!-- Footer -->
     <footer>
-        <p>&copy; <span id="currentYear"></span> 🎶Aaron John Basa Quianio🎶 Philippines</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>&copy; <strong><span id="currentYear"></span></strong> 🎶Aaron John Basa Quianio🎶 Philippines</p>
+        <p>Last Modified: <strong><span id="lastModified"></span></strong></p>
     </footer>
 </body>
 </html>
