@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <!-- Link to JavaScript file -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <!-- Main content -->
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <!-- Hero image -->
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <img src="images/hero-small.webp" alt="National Animal of the Country" class="hero">
+        </picture>
+        <!-- Data section -->
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 300,000 km2</p>
+            <p>Population: 116,416,531</p>
+            <p>Capital: Manila</p>
+            <p>Currency: Peso</p>
+            <p>Time Zone: UTC +8</p>
+        </section>
+        <!-- Weather section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: 30 °F</p>
+            <p>Wind Speed: 10 mph</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 2025🎶Aaron John Basa Quianio🎶 Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
