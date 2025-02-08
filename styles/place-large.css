@@ -1,7 +1,7 @@
 :root {
     --blue: #0038A8;
     --red: #CE1126;
-    --yellow: #FFD700;
+    --yellow: #FFCC00;
     --white: #FFFFFF;
     --font-family: 'Lato', sans-serif;
 }
@@ -22,6 +22,7 @@ header {
     padding: 1.2em 0;
     font-size: 2rem;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero img {
@@ -46,12 +47,13 @@ header {
     padding: 1.5rem;
     border-radius: 10px;
     background-color: var(--white);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .weather h2 {
     position: relative;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .weather h2::after {
@@ -60,6 +62,7 @@ header {
     position: absolute;
     right: -2rem;
     top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 footer {
