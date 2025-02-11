@@ -1,0 +1,36 @@
+/* Apply styles only for screens larger than 1024px */
+@media (min-width: 1024px) {
+    /* Enhance the temple grid layout */
+    #temple-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+        gap: 30px;
+        padding: 40px;
+    }
+
+    /* Improve the temple card design */
+    .temple-card {
+        max-width: 400px;
+        padding: 20px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .temple-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .temple-card p {
+        font-size: 1.1rem;
+    }
+
+    /* Make navigation buttons larger */
+    .nav-button {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+
+    /* Increase footer padding */
+    footer {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
