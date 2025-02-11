@@ -56,7 +56,6 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Additional temples
   {
     templeName: "Salt Lake Temple",
     location: "Salt Lake City, Utah, United States",
@@ -104,7 +103,7 @@ function displayTemples(filteredTemples) {
   });
 }
 
-// Filtering functions
+// Filtering function
 function filterTemples(category) {
   let filteredTemples = [];
 
@@ -122,22 +121,20 @@ function filterTemples(category) {
       filteredTemples = temples.filter(temple => temple.area < 10000);
       break;
     default:
-      filteredTemples = temples; // "Home" case
+      filteredTemples = temples;
   }
 
   displayTemples(filteredTemples);
 }
 
-// Event listeners for navigation buttons
-document.getElementById("home").addEventListener("click", () => filterTemples("home"));
-document.getElementById("old").addEventListener("click", () => filterTemples("old"));
-document.getElementById("new").addEventListener("click", () => filterTemples("new"));
-document.getElementById("large").addEventListener("click", () => filterTemples("large"));
-document.getElementById("small").addEventListener("click", () => filterTemples("small"));
+// Event listeners for buttons
+document.querySelectorAll(".nav-button").forEach(button => {
+  button.addEventListener("click", () => filterTemples(button.dataset.filter));
+});
 
 // Display all temples on page load
 displayTemples(temples);
 
 // Footer Updates
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+document.getElementById("copyright").textContent = `© ${new Date().getFullYear()} Temple Album`;
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
