@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #d2f898; /* Mindaro */
+    color: #4b7f52; /* Fern Green */
+}
+
+/* HEADER & NAVIGATION */
+header {
+    background-color: #4b7f52; /* Fern Green */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #d2f898; /* Mindaro */
+    text-decoration: none;
+    font-weight: 900;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #90d7ff; /* Pale Azure */
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #d2f898; /* Mindaro */
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+/* TEMPLE GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.temple-card {
+    background-color: #ffffff;
+    border: 2px solid #c19875; /* Lion */
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 4 / 2.5;
+    transition: transform 0.3s ease-in-out;
+}
+
+.temple-card img:hover {
+    transform: scale(1.05);
+}
+
+.temple-card h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #4b7f52;
+}
+
+.temple-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.3rem 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4b7f52; /* Fern Green */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .temple-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.show {
+        display: flex;
+    }
+}
