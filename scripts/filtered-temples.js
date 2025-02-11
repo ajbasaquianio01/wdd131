@@ -82,10 +82,10 @@ const temples = [
   }
 ];
 
-// Function to dynamically generate temple cards
+
 function displayTemples(filteredTemples) {
   const templeContainer = document.getElementById("temple-container");
-  templeContainer.innerHTML = ""; // Clear previous results
+  templeContainer.innerHTML = ""; 
 
   filteredTemples.forEach((temple) => {
     const card = document.createElement("div");
@@ -103,7 +103,7 @@ function displayTemples(filteredTemples) {
   });
 }
 
-// Filtering function
+
 function filterTemples(category) {
   let filteredTemples = [];
 
@@ -127,14 +127,14 @@ function filterTemples(category) {
   displayTemples(filteredTemples);
 }
 
-// Event listeners for buttons
+
 document.querySelectorAll(".nav-button").forEach(button => {
   button.addEventListener("click", () => filterTemples(button.dataset.filter));
 });
 
-// Display all temples on page load
+
 displayTemples(temples);
 
-// Footer Updates
+
 document.getElementById("copyright").textContent = `© ${new Date().getFullYear()} Temple Album`;
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
