@@ -1,49 +1,73 @@
+/* siteplan-large.css - Styles for Desktop View */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     background-color: #D2F898; /* Mindaro */
-    color: #4B7F52; /* Fern Green */
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Container Styling */
 .container {
-    max-width: 1200px;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
 }
 
+/* Header */
 header {
+    background-color: #4B7F52; /* Fern Green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #C19875; /* Lion */
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
     background-color: #4B7F52;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 2em;
-}
-
-section {
-    background: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #C19875; /* Lion */
-    border-bottom: 2px solid #90D7FF; /* Pale Azure */
-    padding-bottom: 5px;
-}
-
-.wireframes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 15px 0;
     margin-top: 20px;
 }
 
-.wireframe img {
-    max-width: 48%;
-    border: 2px solid #C19875;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Explorer</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+
+    <header>
+        <h1>Geography Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover the World</h2>
+            <p>Explore the world's continents, landmarks, and population data.</p>
+        </section>
+
+        <section class="filter">
+            <h3>Choose a Continent</h3>
+            <select id="continentSelect">
+                <option value="all">All</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="north-america">North America</option>
+                <option value="south-america">South America</option>
+                <option value="oceania">Oceania</option>
+                <option value="antarctica">Antarctica</option>
+            </select>
+        </section>
+
+        <section class="locations">
+            <h3>Featured Locations</h3>
+            <div id="locationContainer">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Geography Explorer by Aaron John Basa Quianio, Philippines. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
